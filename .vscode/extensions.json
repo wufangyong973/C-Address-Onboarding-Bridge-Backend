@@ -1,15 +1,7 @@
 {
-  "recommendations": [
-    "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint",
-    "rust-lang.rust-analyzer",
-    "ms-azuretools.vscode-docker",
-    "ms-vscode.vscode-typescript-next",
-    "bradlc.vscode-tailwindcss",
-    "redhat.vscode-yaml",
-    "tamasfe.even-better-toml",
-    "aaron-bond.better-comments",
-    "christian-kohler.path-intellisense",
-    "PKief.material-icon-theme"
-  ]
+    "recommendations": [
+        "myml.vscode-markdown-plantuml-preview",
+        "esbenp.prettier-vscode",
+        "jebbs.plantuml"
+    ]
 }
