@@ -1,32 +1,23 @@
 {
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
-  "eslint.workingDirectories": [{ "mode": "auto" }],
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer",
-    "editor.formatOnSave": true
-  },
-  "rust-analyzer.cargo.features": "all",
-  "files.exclude": {
-    "**/node_modules": true,
-    "**/dist": true,
-    "**/target": true
-  },
   "search.exclude": {
-    "**/node_modules": true,
-    "**/dist": true,
-    "**/target": true,
-    "package-lock.json": true,
-    "**/Cargo.lock": true
+    "**/.sst": true
   },
-  "docker.defaultRegistryPath": "",
-  "terminal.integrated.env.linux": {
-    "DATABASE_URL": "postgres://bridge:bridge@localhost:5432/bridge",
-    "REDIS_URL": "redis://localhost:6379"
+  "task.allowAutomaticTasks": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "debug.openDebug": "neverOpen",
+  "problems.autoReveal": true,
+  "terminal.integrated.hideOnStartup": "always",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.inheritEnv": false,
+  "jestrunner.configPath": "jest.unit.config.cjs",
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
   }
 }
