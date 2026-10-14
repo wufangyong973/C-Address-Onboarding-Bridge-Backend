@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "prepare": "husky || true",
-    "build": "npm run build --workspaces",
+    "build": "node api.js && npm run build --workspaces",
     "test": "npm run test --workspaces",
     "test:e2e": "npm run test:e2e --workspace api",
     "lint": "npm run lint --workspaces",
